@@ -57,6 +57,28 @@ Write the algorithm and draw the flowchart for a program that inputs
 marks for 3 subjects, calculates the total and average, and displays
 both.
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT marks1, marks2, marks3
+    Calculate Toatal: marks1 + marks2 + marks3
+    Calculate Average: Total/3
+    PRINT Total and Average
+END
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter marks1, marks2, marks3"/]
+    B --> C["total = marks1 + marks2 + marks3"]
+    C --> D["average = total / 3"]
+    D --> E[/"Display Total and Average"/]
+    E --> F([End])
+```
+
 ---
 
 ## 3. Display Multiplication Table
