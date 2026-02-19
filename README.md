@@ -204,6 +204,40 @@ flowchart TD
 Write the algorithm and draw the flowchart for a program that takes the
 temperature of 7 days, finds the average temperature, and displays it.
 
+```text
+START
+    SET total = 0, day = 1
+    REPEAT 7 TIMES
+        INPUT temperature for day (day)
+        total = total+temperature
+        day = day+1
+    ENDREPEAT
+        average = total/7
+        PRINT average
+
+END
+
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[total = 0
+                    day = 1]
+    B --> C{"Is day <= 7?"}
+
+    C -- Yes --> D[/"Enter temperature for day (day)"/]
+    D --> E[total = total + temperature]
+    E --> F[day = day + 1]
+    F --> C
+
+    C -- No --> G[average = total / 7]
+    G --> H[/"Display average temperature"/]
+    H --> I([End])
+
+```
+
 ---
 
 ## 7. Calculate Area of a Rectangle
