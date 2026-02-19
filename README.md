@@ -86,6 +86,36 @@ flowchart TD
 Create an algorithm and flowchart that input a number and display its
 multiplication table from 1 to 10 using a loop.
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT a number N
+    SET count = 1
+    REPEAT 10 TIMES
+        result = N * count
+        PRINT result
+        count = count + 1
+    ENDREPEAT
+END
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter/Input a number N"/]
+    B --> C[count = 1]
+    C --> D{"Is count <= 10?"}
+
+    D -- Yes --> E[Calculate: result = N * count]
+    E --> F[/"Display num × count = result"/]
+    F --> G[count = count + 1]
+    G --> D
+
+    D -- No --> H([End])
+```
+
 ---
 
 ## 4. Positive, Negative, or Zero Check
