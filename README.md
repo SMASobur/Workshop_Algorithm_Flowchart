@@ -245,6 +245,30 @@ flowchart TD
 Create an algorithm and flowchart to input length and width, calculate
 the area (**Area = Length × Width**), and display the result.
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT the lengt L
+    INPUT the width W
+        area = L x W
+        DIPLAY the area
+END
+
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter length L"/]
+    B --> C[/"Enter width W"/]
+    C --> D["area = L × W"]
+    D --> E[/"Display area"/]
+    E --> F([End])
+
+```
+
 ---
 
 ## 8. Determine Pass or Fail
