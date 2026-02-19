@@ -171,6 +171,32 @@ interest using the formula:
 - **R = Rate of Interest** → percentage per year
 - **T = Time** → number of years
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT Principal amount P
+    INPUT Rate of int R
+    INPUT Time in year T
+        SI = (PxRxT)/100
+        DIPLAY SI
+END
+
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter Principal amount P"/]
+    B --> C[/"Enter Rate of Int R"/]
+    C --> D[/"Enter Time in years T"/]
+    D --> E["SI = (P × R × T) / 100"]
+    E --> F[/"Display Simple Interest"/]
+    F --> G([End])
+
+```
+
 ---
 
 ## 6. Average Temperature Calculation
