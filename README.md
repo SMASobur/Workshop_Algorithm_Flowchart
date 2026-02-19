@@ -123,6 +123,41 @@ flowchart TD
 Write the algorithm and flowchart to input a number and display whether
 it is positive, negative, or zero.
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT a number N
+    IF N==0
+        PRINT Zero
+    ELSE IF N>0
+        PRINT Positive
+    ELSE
+        PRINT Negative
+    ENDIF
+
+END
+
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter a number N"/]
+    B --> C{"Is N == 0?"}
+
+    C -- Yes --> D[/"Display 'Zero'"/]
+    D --> H([End])
+
+    C -- No --> E{"Is N > 0?"}
+    E -- Yes --> F[/"Display 'Positive'"/]
+    F --> H
+
+    E -- No --> G[/"Display 'Negative'"/]
+    G --> H
+```
+
 ---
 
 ## 5. Simple Interest Calculator
