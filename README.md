@@ -312,6 +312,39 @@ flowchart TD
 Write the algorithm and draw the flowchart that input a number and
 calculate its factorial using a loop.
 
+### ✔ Pseudocode
+
+```text
+START
+    INPUT a number N
+    SET factorial =1, counter = 1
+    REPEAT N TIMES
+        factorial=factorial x counter
+        counter = counter + 1
+    ENDREPEAT
+    PRINT factorial
+END
+
+```
+
+### ✔ Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[/"Enter a number N"/]
+    B --> C[factorial = 1
+            counter = 1]
+    C --> D{"Is counter <= N?"}
+
+    D -- Yes --> E[factorial = factorial × counter]
+    E --> F[counter = counter + 1]
+    F --> D
+
+    D -- No --> G[/"Display factorial"/]
+    G --> H([End])
+
+```
+
 ---
 
 ## 10. Calculate Discount on Purchase
